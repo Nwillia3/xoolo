@@ -23,20 +23,21 @@
         <p><%= @post.descriptionthree %></p>
       </div>
     </div>
+    <!-- <p class="date">
+      Submitted <%= time_ago_in_words(@post.created_at) %> Ago
+    </p> -->
+    <% if user_signed_in? %>
+      <%= link_to 'Edit', edit_post_path(@post) %> 
+    <% end %>
+    <%= link_to 'Back', root_path %>
+
+    <div id="comments">
+      <h3><%= @post.comments.count %> Comments</h3>
+      <%= render @post.comments %>
+
+      <h3>Add a comment:</h3>
+      <%= render "comments/form" %>
+    </div>
   </div>   
-  <!-- <p class="date">
-    Submitted <%= time_ago_in_words(@post.created_at) %> Ago
-  </p> -->
-  <% if user_signed_in? %>
-    <%= link_to 'Edit', edit_post_path(@post) %> 
-  <% end %>
-  <%= link_to 'Back', root_path %>
-
-  <div id="comments">
-    <h2><%= @post.comments.count %> Comments</h2>
-    <%= render @post.comments %>
-
-    <h3>Add a comment:</h3>
-    <%= render "comments/form" %>
-  </div>
+  
 </div>
