@@ -16,3 +16,92 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+
+html, body {
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #0091C6;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a {
+    color: black;
+}
+a:hover, a:focus {
+    color: #0091C6;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbrand {
+	font-family: 'Walter Turncoat', cursive;
+	font-size: 100px;
+}
+
+li{
+	font-size: 1.2em;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+@media (min-width: 768px)	{
+	.container {
+	    width: 750px;
+	  }
+}	
+
+@media (min-width: 767px) and (min-width: 768px){
+	#column-logo-no-form {
+    float: left;
+    width: 83.33333333%;
+	}
+
+}
+
+.nav-bar-2017 {
+    margin: 5px 0px 0px 0;
+}
+
+
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.button {
+	outline: none;
+	background: transparent;
+	border: 1px solid #d6dce0;
+	padding: .5em 1.5em;
+	border-radius: 1.5em;
+	&:hover {
+		border: 1px solid #33acb7;
+		color: #33acb7;
+		a {
+			color: #33acb7 !important;
+		}
+	}
+}
+
+.POST{
+	text-align: center;
+
+}
+

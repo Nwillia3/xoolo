@@ -1,52 +1,42 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Headline:</strong>
-  <%= @post.headline %>
-</p>
+<div class="container">
+  <div>
+    <h1 class="POST"><%= @post.headline %></h1>
+    <div class="row">
+      <div>
+        <h3 id="col-sm-8 col-sm-offset-2">
+          <strong><%= @post.questionone %></strong>
+        </h3>
+        <p><%= @post.descriptionone %></p>
 
-<p>
-  <strong>Questionone:</strong>
-  <%= @post.questionone %>
-</p>
+        <h3 id="col-sm-8 col-sm-offset-2">
+          <strong><%= @post.questiontwo %></strong>
+        </h3>
+        <p>
+          <%= @post.descriptiontwo %>
+        </p>
 
-<p>
-  <strong>Descriptionone:</strong>
-  <%= @post.descriptionone %>
-</p>
+        <h3 id="col-sm-8 col-sm-offset-2">
+          <strong><%= @post.questionthree %></strong>
+        </h3>
+        <p><%= @post.descriptionthree %></p>
+      </div>
+    </div>
+  </div>   
+  <!-- <p class="date">
+    Submitted <%= time_ago_in_words(@post.created_at) %> Ago
+  </p> -->
+  <% if user_signed_in? %>
+    <%= link_to 'Edit', edit_post_path(@post) %> 
+  <% end %>
+  <%= link_to 'Back', root_path %>
 
-<p>
-  <strong>Questiontwo:</strong>
-  <%= @post.questiontwo %>
-</p>
+  <div id="comments">
+    <h2><%= @post.comments.count %> Comments</h2>
+    <%= render @post.comments %>
 
-<p>
-  <strong>Descriptiontwo:</strong>
-  <%= @post.descriptiontwo %>
-</p>
-
-<p>
-  <strong>Questionthree:</strong>
-  <%= @post.questionthree %>
-</p>
-
-<p>
-  <strong>Descriptionthree:</strong>
-  <%= @post.descriptionthree %>
-</p>
-
-<p class="date">
-  Submitted <%= time_ago_in_words(@post.created_at) %> Ago
-</p>
-<% if user_signed_in? %>
-  <%= link_to 'Edit', edit_post_path(@post) %> 
-<% end %>
-<%= link_to 'Back', posts_path %>
-
-<div id="comments">
-  <h2><%= @post.comments.count %> Comments</h2>
-  <%= render @post.comments %>
-
-  <h3>Add a comment:</h3>
-  <%= render "comments/form" %>
+    <h3>Add a comment:</h3>
+    <%= render "comments/form" %>
+  </div>
 </div>

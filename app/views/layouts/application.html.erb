@@ -3,10 +3,12 @@
   <head>
     <title>Xoolo</title>
     <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
   <nav class="navbar navbar-default">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -17,44 +19,39 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">Brand</a>
+	      <h1 class="navbrand"><%= link_to 'Xoolo', root_path %> </h1>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li> <%= link_to 'New post', new_post_path %> </li>
+	        <% if user_signed_in? %>
+		      	<li> <%= link_to 'New post', new_post_path %> </li>
+		      	<li> <%= link_to 'Edit Profile', edit_user_registration_path %> </li>
+		      	<li> <%= link_to 'Log out', destroy_user_session_path, method: :delete %> </li>
+		      <% end %>
 	      </ul>
 	      
 	      <ul class="nav navbar-nav navbar-right">
-	       <li><%= link_to "About", about_path %></li>
-	        <li><a href="#">Link</a></li>
-	        <li><a href="#">Link</a></li>
+	        <li><%= link_to "About Us", about_path %></li>
+	        <li><a href="#">Blog</a></li>
+	        <li><a href="#">Guides</a></li>
 	      </ul>
-	      <% if user_signed_in? %>
-	      	<p class="sign_in">Admin login</p>
-	      <% end %>
+	      
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
 
   <body>
-  	<div id="main_content">
+  	<div class="container">
 			<div id="header">
 				<% if current_page?(root_path) %>
-					<p>All Posts</p>
-				<% elsif current_page?(about_path) %>
-					<p>About</p>
+					
 				<% else %>
 					<%= link_to "Back to All Posts", root_path %>
 				<% end %>
 
-				<% if user_signed_in? %>
-					<div class="buttons">
-						<button class="button"><%= link_to "New Post", new_post_path %></button>
-						<button class="button"><%= link_to "Log out", destroy_user_session_path, method: :delete%></button>
-					</div>
-				<% end %>
+				
 			</div>
 
 			<% flash.each do |name, msg| %>
