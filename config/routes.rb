@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   	resources :comments
   end
 
-  root 'welcome#index'
+  root 'posts#index'
   get '/about', to: 'pages#about'
   get 'welcome/index'
 
