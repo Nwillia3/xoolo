@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  
-  
+
+  resources :welcomes
   resources :terms
+  
   devise_for :users do
   	get '/users/sign_out' => 'devise/sessions#destroy'
   end
@@ -10,9 +11,11 @@ Rails.application.routes.draw do
   	resources :comments
   end
 
-  root 'welcome#index'
+  root 'welcomes#index'
   get '/about', to: 'pages#about'
-  get 'welcome/index'
+  
+ 
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
