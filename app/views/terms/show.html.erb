@@ -1,14 +1,31 @@
-<p id="notice"><%= notice %></p>
+<div id="content">
+	
+	<div class="row">
+		<div class="Post">
+			<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @term.title %>
-</p>
 
-<p>
-  <strong>Definition:</strong>
-  <%= @term.definition %>
-</p>
+			<h1 id="Morning">Finance term of the day</h1>
 
-<%= link_to 'Edit', edit_term_path(@term) %> |
-<%= link_to 'Back', terms_path %>
+			<h3> <%= @term.title%> </h3>
+
+			<p> <%= @term.definition %> </p>
+
+			<% if user_signed_in? %>
+				<%= link_to 'Edit', edit_term_path(@term) %> 
+			<% end %> 
+
+			<%= link_to 'Back', terms_path %>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
