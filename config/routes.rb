@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
   
+  resources :terms
   devise_for :users do
   	get '/users/sign_out' => 'devise/sessions#destroy'
   end
@@ -9,7 +10,7 @@ Rails.application.routes.draw do
   	resources :comments
   end
 
-  root 'posts#index'
+  root 'welcome#index'
   get '/about', to: 'pages#about'
   get 'welcome/index'
 

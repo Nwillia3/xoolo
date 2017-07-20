@@ -50,13 +50,21 @@ a:hover, a:focus {
 	font-size: 100px;
 }
 
-li{
-	font-size: 1.2em;
-}
 
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+
+.nav-words{
+	font-size:12;
+
+}
+
+#about_wrapper{
+		background: #F9F9F9;
+		color: #000;
 }
 
 @media (min-width: 768px)	{
@@ -65,12 +73,79 @@ a {
 	  }
 }	
 
-@media (min-width: 767px) and (min-width: 768px){
+
+
+
+
+@media (max-width: 900px){
+.intro-image{
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media (min-width: 767px) and (min-width: 768px) {
 	#column-logo-no-form {
     float: left;
     width: 83.33333333%;
 	}
+	
 
+}
+
+@media (min-width: 1025px){
+
+	#title{
+		font-size:70px;
+		font-weight: 900;
+	}
+	#about_wrapper{
+		background: #F9F9F9;
+		color: #000;
+		margin-bottom: 4em;
+
+	}
+
+	#content-title{
+		font-size: 52px;
+		margin-top: 1em;
+		padding-top: 1
+
+		em;
+    margin-bottom: .65em;
+    line-height: 1.2;
+	}
+	
+	#about1 {
+	font-size: 19px;
+	line-height: 1.75;
+	font-weight: 200;
+	margin-bottom: 2em;
+	padding-bottom: 60px;
+	
+	}
+	
+}
+#content {
+  padding-right: 65px;
+  padding-left: 65px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  #content {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  #content{
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  #content{
+    width: 1170px;
+  }
 }
 
 .nav-bar-2017 {
@@ -105,11 +180,7 @@ a {
 
 }
 
-#about{
-	font-size: 15.4px;
-	line-height: 2;
-	font-family: proxima-nova,Helvetica,Arial,sans-serif;
-}
+
 /*#signature{
 	font-size: 30px;
 	font-family: 'Oleo Script', cursive;
@@ -124,6 +195,3 @@ p{
 	  font-size: 15px;
     line-height: 2;
 }
-
-
-

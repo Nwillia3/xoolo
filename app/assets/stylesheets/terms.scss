@@ -1,0 +1,33 @@
+// Place all the styles related to the terms controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+@media (max-width: 600px) {
+	#Morning{
+		font-size: 30px;
+		font-weight: 900;
+	}
+
+}
+
+
+@media (min-width: 768px) {
+	#Morning{
+	font-size: 50px;
+	font-weight: 900;
+	}
+
+
+}
+
+@media (min-width: 1025px) {
+	#Morning {
+	font-size: 60px;
+	font-weight: 900;
+
+	}
+}
+

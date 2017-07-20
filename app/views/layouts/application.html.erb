@@ -7,6 +7,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -23,7 +24,7 @@
 		</script>
   </head>
 
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default nav-words">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -33,7 +34,10 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <h1 class="navbrand"><%= link_to 'Xoolo', root_path %> </h1>
+
+	     	<!--NavBar Brand image -->
+	      <%= link_to(image_tag("/assets/logo/fblogo.png", :alt => "logo", :title => "Home"), "/") %>
+	     
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,9 +51,10 @@
 	      </ul>
 	      
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><%= link_to "About Us", about_path %></li>
+	        <!-- <li><%= link_to "About Us", about_path %></li> -->
 	        <li><a href="https://medium.com/@xoolo">Blog</a></li>
-	        <li><a href="#">Guides</a></li>
+	        <!-- <li><%= link_to "News", posts_path %></li> -->
+	        <li><%= link_to "Daily term", terms_path %></li>
 	      </ul>
 	      
 	    </div><!-- /.navbar-collapse -->
@@ -57,24 +62,35 @@
 	</nav>
 
   <body>
-  	<div class="container">
-			<div id="header">
-				<% if current_page?(root_path) %>
-					
-				<% else %>
-					<%= link_to "Back to All Posts", root_path %>
-				<% end %>
-
+	
+		<!-- <div id="header">
+			<% if current_page?(root_path) %>
 				
-			</div>
-
-			<% flash.each do |name, msg| %>
-				<%= content_tag(:div, msg, class: "alert") %>
+			<% else %>
+				<%= link_to "Back to All Posts", root_path %>
 			<% end %>
+		</div> -->
 
-			<%= yield %>
-		</div>
+		<% flash.each do |name, msg| %>
+			<%= content_tag(:div, msg, class: "alert") %>
+		<% end %>
+
+	<%= yield %>
     
   </body>
+
+  <footer class="footer-distributed">
+		<div class="footer-left">
+			<h3>Xoolo<span><%= image_tag("logo/fblogo.png", width: '50px', height: '50px') %></span></h3>
+			<p class="footer-links">
+				<a href="https://www.facebook.com/getXoolo/">Facebook</a>
+				·
+				<a href="https://twitter.com/_xoolo">Twitter</a>
+				·
+				<a href="https://medium.com/@xoolo">Blog</a>
+			</p>
+			<p class="footer-company-name">Xoolo Inc &copy; 2017</p>
+		</div>
+	</footer>
 
 </html>

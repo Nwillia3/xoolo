@@ -2,3 +2,101 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.container{
+	background: #fff;
+}
+
+.intro{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+
+
+.logo-wrapper{
+	font-size: 56px;
+	font-weight: 400;
+	color: purple;
+}
+
+
+/* about us */
+
+#content-wrapper{
+	padding: 0px 30px;
+}
+
+/* feature section */
+
+#features{
+	padding: 10px 50px;
+	margin-bottom: 4em;
+}
+
+
+
+
+/* Footer links */
+
+
+.footer-basic-centered .footer-company-motto{
+	color:  #fff;
+	font-size: 24px;
+	margin: 0;
+
+}
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+.footer-left{
+	text-align: center;
+	color: #000
+}
+
+@media (max-width: 600px) {
+	.footer-company-motto{
+		font-size: 18px;
+	}
+
+	.footer-company-name{
+		font-size: 12px;
+	}
+}
+
+.footer-distributed{
+	background-color: #fff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	color: black;
+	padding: 10px 50px;
+	margin-top: 10px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #000;
+	font-size: 16px;
+	margin: 0;
+	text-align: center;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
