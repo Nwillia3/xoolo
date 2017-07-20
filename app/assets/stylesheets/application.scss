@@ -106,11 +106,12 @@ a {
 	}	
 
 /* content section */
-	#content-title {
+	#content-title h1{
 		font-size: 28px;
 	}
-	#content-title h2{
+	#motto{
 		font-size: 18px;
+		font-weight: 600;
 	}
 }
 @media (min-width: 1025px){
@@ -126,14 +127,17 @@ a {
 
 	}
 
-	#content-title{
+	#content #content-title h1{
 		font-size: 52px;
 		margin-top: 1em;
-		padding-top: 1
-
-		em;
+		padding-top: 1em;
     margin-bottom: .65em;
     line-height: 1.2;
+	}
+
+	#motto{
+		font-size: 24px;
+		font-weight: 600;
 	}
 	
 	#about1 {
@@ -146,6 +150,7 @@ a {
 	}
 	
 }
+
 #content {
   padding-right: 15px;
   padding-left: 15px;
