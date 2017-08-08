@@ -20,12 +20,11 @@
 
 
 html, body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Archivo', sans-serif;
+
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 500;
-}
+/* Nav bar */
 
 .navbar-default {
     background-color: transparent;
@@ -46,7 +45,7 @@ a:hover, a:focus {
 }
 
 .navbrand {
-	font-family: 'Walter Turncoat', cursive;
+	
 	font-size: 100px;
 }
 
@@ -62,33 +61,45 @@ a {
 
 }
 
-#about_wrapper{
-		background: #F9F9F9;
-		color: #000;
+.container-fluid{
+	padding-left:135px;
+}
+
+/* Nav bar */
+
+
+
+p{
+	  font-size: 15px;
+    line-height: 2;
+}
+
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 
 
+.POST{
+	text-align: left;
+
+}
 
 
-@media (min-width: 768px)	{
-	.container {
-	    width: 750px;
-	  }
-}	
-
-
+/* media queries*/
 
 
 
 @media (max-width: 900px){
-.intro-image{
-		width: 300px;
-		height: 300px;
-	}
 }
 
 @media (min-width: 767px) and (min-width: 768px) {
+	.container {
+	    width: 750px;
+	  }
 	#column-logo-no-form {
     float: left;
     width: 83.33333333%;
@@ -98,64 +109,11 @@ a {
 }
 
 @media (max-width: 768px){
-	#content {
-  padding-right: 5px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-	}	
+	
 
-/* content section */
-	#content-title h1{
-		font-size: 28px;
-	}
-	#motto{
-		font-size: 18px;
-		font-weight: 600;
-	}
 }
 @media (min-width: 1025px){
 
-	#title{
-		font-size:70px;
-		font-weight: 900;
-	}
-	#about_wrapper{
-		background: #F9F9F9;
-		color: #000;
-		margin-bottom: 4em;
-
-	}
-
-	#content #content-title h1{
-		font-size: 52px;
-		margin-top: 1em;
-		padding-top: 1em;
-    margin-bottom: .65em;
-    line-height: 1.2;
-	}
-
-	#motto{
-		font-size: 24px;
-		font-weight: 600;
-	}
-	
-	#about1 {
-	font-size: 19px;
-	line-height: 1.75;
-	font-weight: 200;
-	margin-bottom: 2em;
-	padding-bottom: 60px;
-	
-	}
-	
-}
-
-#content {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 @media (min-width: 768px) {
   #content {
@@ -173,50 +131,71 @@ a {
   }
 }
 
-.nav-bar-2017 {
-    margin: 5px 0px 0px 0;
+
+
+
+/* Footer links */
+
+
+.footer-basic-centered .footer-company-motto{
+	color:  #fff;
+	font-size: 24px;
+	margin: 0;
+
 }
 
 
-.container{
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+/* If you don't want the footer to be responsive, remove these media queries */
+.footer-left{
+	text-align: center;
+	color: #000
 }
 
-.button {
-	outline: none;
-	background: transparent;
-	border: 1px solid #d6dce0;
-	padding: .5em 1.5em;
-	border-radius: 1.5em;
-	&:hover {
-		border: 1px solid #33acb7;
-		color: #33acb7;
-		a {
-			color: #33acb7 !important;
-		}
+@media (max-width: 600px) {
+	.footer-company-motto{
+		font-size: 18px;
+	}
+
+	.footer-company-name{
+		font-size: 12px;
 	}
 }
 
-.POST{
+.footer-distributed{
+	background-color: #fff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
 	text-align: left;
-
+	font: normal 16px sans-serif;
+	color: black;
+	padding: 10px 50px;
+	margin-top: 10px;
 }
 
-
-/*#signature{
-	font-size: 30px;
-	font-family: 'Oleo Script', cursive;
-
-}*/
-
-#signature{
-	font-size: 20px;
+.footer-distributed .footer-left p{
+	color:  #000;
+	font-size: 16px;
+	margin: 0;
+	text-align: center;
 }
 
-p{
-	  font-size: 15px;
-    line-height: 2;
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
 }
+

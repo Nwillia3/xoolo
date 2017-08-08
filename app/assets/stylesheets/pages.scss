@@ -1,3 +1,111 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.bg {
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 0 hsla(0,0%,46%,.2);
+  cursor: pointer;
+  font-size: 12px;
+  min-height: 190px;
+  min-width: 190px;
+  position: relative;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.bg .bg-hover-wrapper {
+  background-color: #2c3e50;
+  border-radius: 2px;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: all .25s cubic-bezier(.445,.05,.55,.95);
+  width: 100%;
+}
+
+#bg{
+  padding-top: 50px;
+}
+
+                                /*Curriculum page */
+
+
+
+.finlit-wrapper{
+  background-color:#f0f0f0;
+  padding-bottom: 180px;
+  
+  margin-top: -130px;
+}
+
+.finlit-wrapper{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+.wrapper2{
+  padding-top: 100px;
+  padding-left: 50px;
+}
+
+
+
+
+.index{
+  background-color: #fff;
+  padding: 50px 100px;
+  margin-top: -20px;
+
+}
+
+.index-item{
+  padding-top: 30px;
+}
+
+@media (max-width: 768px){
+  .index{
+  padding: 50px 50px;
+  
+  }
+
+  .finlit-wrapper {
+      padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 767px) and (min-width: 768px){
+  .finlit-wrapper {
+      
+  }
+
+  .wrapper2{
+    padding-top: 100px;
+    padding-left: 150px;
+  }
+
+  .title{
+    padding-top: 20px;
+    padding-left: 60px;
+  }
+
+  #guideline{
+    padding-top: 40px;
+    padding-left: 60px;
+  }
+
+}
+
+
+
+
+/*Curriculum pages end */

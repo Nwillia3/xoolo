@@ -5,10 +5,10 @@
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Archivo:700" rel="stylesheet">
 
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
@@ -51,11 +51,15 @@
 	      </ul>
 	      
 	      <ul class="nav navbar-nav navbar-right">
-	        <!-- <li><%= link_to "About Us", about_path %></li> -->
+	      	<li><%= link_to "Curriculum", curriculum_path %></li>
 	        <li><a href="https://medium.com/@xoolo">Blog</a></li>
 	        <!-- <li><%= link_to "News", posts_path %></li> -->
 	        <li><%= link_to "Daily term", terms_path %></li>
-	      </ul>
+	        <li id= "test"><%= link_to "About Us", about_path %></li>
+
+	      
+				 
+				</ul>
 	      
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->

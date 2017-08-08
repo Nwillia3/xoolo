@@ -13,7 +13,14 @@ Rails.application.routes.draw do
 
   root 'welcomes#index'
   get '/about', to: 'pages#about'
-  
+
+  get '/fplanning', to: 'pages#fplanning'
+  get '/investment', to: 'pages#investment'
+  get '/insurance', to: 'pages#insurance'
+  get '/tax', to: 'pages#tax'
+  get '/retirement', to: 'pages#retirement'
+  get '/estate', to: 'pages#estate'
+  get '/curriculum', to: 'pages#curriculum' 
  
 
 

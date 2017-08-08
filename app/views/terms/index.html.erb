@@ -4,10 +4,11 @@
 	<h1 id="Morning">Finance term of the day</h1>
 
 	<% @terms.each do |term| %>
-	  <div class="POST col-sm-12">
+	  <div class="POST col-sm-12 col-md-6">
 	    <h3 class="date"><%= term.created_at.strftime("%B %d, %Y") %></h3>
 	    <h2 class="title"><%= link_to term.title, term %></h2>
-	    <p><%= term.definition %></p>
+	    <!-- <p><%= term.definition %></p> -->
+
 	   
 	  </div>
 	  <br>

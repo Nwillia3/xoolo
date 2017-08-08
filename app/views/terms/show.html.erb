@@ -1,27 +1,28 @@
-<div id="content">
-	
-	<div class="row">
-		<div class="Post">
-			<p id="notice"><%= notice %></p>
+<div class="container">
 
 
-			<h1 id="Morning">Finance term of the day</h1>
+	<p id="notice"><%= notice %></p>
 
-			<h3> <%= @term.title%> </h3>
 
-			<p> <%= @term.definition %> </p>
+	<h1 id="Morning">Finance term of the day</h1>
 
-			<% if user_signed_in? %>
-				<%= link_to 'Edit', edit_term_path(@term) %> 
-			<% end %> 
+	<h2> <%= @term.title%> </h2>
 
-			<%= link_to 'Back', terms_path %>
+	<p> <%= @term.definition %> </p>
+	<br>
 
-		</div>
-	</div>
+	<h3> Example:</h3>
+	<%= @term.example %>
+
+
+	<% if user_signed_in? %>
+		<%= link_to 'Edit', edit_term_path(@term) %> 
+	<% end %> 
+
+	<%= link_to 'Back', terms_path %>
+
+			
 </div>
-
-
 
 
 

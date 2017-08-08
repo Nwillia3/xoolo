@@ -3,6 +3,7 @@ class CreateTerms < ActiveRecord::Migration[5.0]
     create_table :terms do |t|
       t.string :title
       t.text :definition
+      t.text :example
 
       t.timestamps
     end

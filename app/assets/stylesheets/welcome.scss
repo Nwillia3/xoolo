@@ -2,22 +2,72 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+/*general homepage styles÷*/
 .container{
 	background: #fff;
 }
 
-.intro{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
+
+
+/*general homepage styles end */
+
+/*section 1 */
+
+.home-backimg{
+  background-image:
+    url("logo/biz.png") !important;
+  padding-bottom: 150px;
+  
+  margin-top: -130px;
 }
 
 
-.logo-wrapper{
-	font-size: 56px;
-	font-weight: 400;
-	color: purple;
+#mantra{
+	padding-top: 1em;
+	font-weight: 500px;
+	font-size: 36px;
+	line-height: 50px;
+	font-style: bold;
+	margin-top: 2.5em;
+
 }
+
+#p1{
+	font-weight: 900px;
+	font-size: 16px;
+	line-height: 30px;
+	padding-bottom: 1em;
+}
+
+#BTN{
+	padding-bottom: 1.2em;
+}
+
+
+/*section 1  end */
+#stat1{
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
+	font-size: 26px;
+	font-weight: 900px;
+
+
+}
+/*section 2 */
+/*.home-backimg2{
+  background-image:
+    url(https://cdn.kastatic.org/images/homepage/mountains-simple.svg) !important;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-bottom: 0px;
+  margin-top: -140px;
+
+}*/
+
+
+
+/*section 2  end */
+
 
 
 /* about us */
@@ -33,70 +83,29 @@
 	margin-bottom: 4em;
 }
 
+@media (max-width: 768px) {
 
+	home-backimg{
+  margin-top: -125px;
 
+ }
 
-/* Footer links */
+	/* section 1 */
+  #mantra h1{
+  	font-size: 28px;
+  	margin-top: 50px;
+  }
 
+  /* section 2 */
 
-.footer-basic-centered .footer-company-motto{
-	color:  #fff;
-	font-size: 24px;
-	margin: 0;
+  #stat1{
+	
+	font-size: 22px;
+
 
 }
 
 
-/* If you don't want the footer to be responsive, remove these media queries */
-.footer-left{
-	text-align: center;
-	color: #000
 }
 
-@media (max-width: 600px) {
-	.footer-company-motto{
-		font-size: 18px;
-	}
 
-	.footer-company-name{
-		font-size: 12px;
-	}
-}
-
-.footer-distributed{
-	background-color: #fff;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: normal 16px sans-serif;
-	color: black;
-	padding: 10px 50px;
-	margin-top: 10px;
-}
-
-.footer-distributed .footer-left p{
-	color:  #000;
-	font-size: 16px;
-	margin: 0;
-	text-align: center;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 600px) {
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-right{
-		text-align: center;
-	}
-
-	.footer-distributed .footer-right{
-		float: none;
-		margin: 0 auto 20px;
-	}
-
-	.footer-distributed .footer-left p.footer-links{
-		line-height: 1.8;
-	}
-}
