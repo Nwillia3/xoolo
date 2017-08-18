@@ -30,7 +30,8 @@
 }
 
 #bg{
-  padding-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
                                 /*Curriculum page */
@@ -38,7 +39,7 @@
 
 
 .finlit-wrapper{
-  background-color:#f0f0f0;
+  background-color:#F3ECF9;
   padding-bottom: 180px;
   
   margin-top: -130px;
@@ -62,8 +63,8 @@
 
 
 .index{
-  background-color: #fff;
-  padding: 50px 100px;
+  background-color: #FCFDFB;
+  padding: 50px 150px;
   margin-top: -20px;
 
 }
@@ -81,6 +82,12 @@
   .finlit-wrapper {
       padding-bottom: 100px;
   }
+
+  .wrapper2{
+  
+  padding-left: 20px;
+  }
+
 }
 
 @media (min-width: 767px) and (min-width: 768px){
@@ -106,6 +113,154 @@
 }
 
 
+                                /*Curriculum pages end */
 
 
-/*Curriculum pages end */
+
+/*financial planning page*/  /* Has some investment styling */
+
+
+.finlit-wrapper2{
+  background-color:#F3ECF9;
+  padding-bottom: 100px;
+  
+  margin-top: -130px;
+}
+.wrapper3 {
+    padding-top: 100px;
+    padding-left: 0px;
+}
+
+.wrapper3 h1{
+  font-size: 50px;
+}
+
+.bg h2{
+  font-size: 2.4em;
+}
+
+.fp-index-item ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 2;
+  
+}
+
+@media (max-width: 768px){
+  .wrapper3 h1{
+  font-size: 30px;
+  }
+  .index h2{
+    font-size: 22px;
+  }
+
+  .bg h2 {
+  font-size: 2em;
+}
+
+
+}
+
+
+
+
+
+.fp-index-item ul li { display: inline; font-size: 16px;}
+
+.fp-index-item ul li a {
+  text-decoration: none;
+}
+
+.fp-index-1{
+
+  background-color: #FCFDFB
+}
+
+.fp-index-item ul li a:hover{
+  color: blue;
+ 
+}
+
+.index-fp{
+
+  padding-bottom: 40px;
+}
+
+
+ .row-fp{
+    padding-top: 20px;
+  }
+
+.separator{
+    background-color: #D6D8DA !important;
+    height: 1px !important;
+    /*margin-left: 20px !important;
+    margin-right: 20px !important;*/
+    margin-bottom: 5px;
+}
+
+
+
+/*media quiries */
+@media  (min-width: 1001px)  {
+  .fp-index{
+    padding-right: 150px;
+    padding-left: 150px;
+    padding-top: 50px;
+    
+    
+  }
+  .fp-index-1{
+    padding: 100px 200px 110px 240px;
+  }
+
+  .fp-title{
+    padding-bottom: 50px;
+  }
+   
+
+}
+
+@media  (min-width: 768px) and (max-width: 1000px) {
+  .fp-index{
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-top: 30px;
+      
+  }
+
+  .fp-index-1{
+    padding: 70px 200px 70px 130px;
+  
+  }
+  .fp-title{
+    padding-bottom: 30px;
+  }
+
+  .space{
+    padding-top: 20px;
+  }
+
+
+
+
+}
+
+@media  (max-width: 768px) {
+  .fp-index{
+    padding-right: 40px;
+    padding-left: 40px;
+    
+  }
+  .fp-index-1{
+    padding: 50px 50px;
+  
+  }
+  .fp-title{
+    font-size: 24px;
+    padding-top: 30px;
+  }
+}
+
+/*finacial planning end */

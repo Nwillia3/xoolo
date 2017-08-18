@@ -16,7 +16,7 @@
 .home-backimg{
   background-image:
     url("logo/biz.png") !important;
-  padding-bottom: 150px;
+  padding-bottom: 120px;
   
   margin-top: -130px;
 }
@@ -45,28 +45,134 @@
 
 
 /*section 1  end */
-#stat1{
-	padding-top: 1.2em;
-	padding-bottom: 1.2em;
-	font-size: 26px;
-	font-weight: 900px;
+
+/* Stats section */
+.stat {
+	font-family: 'Anton', sans-serif;
+	font-size: 32px;
+	color: #323298;
+	
+
+}
+
+
+
+.stat-section-wrapper{
+	padding: 40px 0px 40px 20px;
+}
+
+.gray h2 {
+	font-size: 22px;
+}
+
+.gray h3 {
+	font-size: 18px;
+}
+
+.gray{
+	padding: 20px 15px 43px 15px;
+	
+	background: #fff;
+	
+}
+
+
+
+
+@media (min-width: 0px) and (max-width: 599px){
+
+	.stat-section{
+		padding: 50px 20px;
+	}
+	.test img{
+		
+		width: 85%;
+
+	}
+
+	.stat-section .col-sm-3{
+		text-align: center;
+	}
+
 
 
 }
-/*section 2 */
-/*.home-backimg2{
-  background-image:
-    url(https://cdn.kastatic.org/images/homepage/mountains-simple.svg) !important;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  margin-bottom: 0px;
-  margin-top: -140px;
 
-}*/
+@media (min-width: 600px) and (max-width: 768px) {
 
+	.stat-section-wrapper .row .col-sm-6{
+		width: 45%;
+	}
+	.stat-section{
+		padding: 50px 15px;
+	}
+
+	.gray{
+		padding: 20px 15px 43px 15px;
+	}
+
+}
+
+@media (min-width: 769px) and (max-width: 1000px){
+	.stat-section-wrapper .row .col-sm-6{
+		width: 45%;
+	}
+	.stat-section{
+		padding: 50px 15px;
+	}
+
+	.gray{
+		padding: 20px 15px 43px 15px;
+		background: #fff;
+	}
+}
+
+
+@media (min-width: 1001px) {
+	.stat-section{
+	padding: 50px 70px 50px 130px;
+	}
+
+	.stat-section-wrapper .row .col-md-6{
+		width: 45%;
+	}
+
+	.gray{
+		padding: 20px 15px 68px 15px;
+		background: #fff;
+	}
+
+}
+
+
+/* Stats section end */
+
+
+#stat1{
+	
+	padding-bottom: 1.2em;
+	font-size: 26px;
+	font-weight: 900px;
+}
+
+.wrapper-text{
+	padding: 50px 50px 70px 150px;
+	background-color: red;
+}
 
 
 /*section 2  end */
+
+
+/*    button for home page
+height: 44px;
+    line-height: 44px;
+    background: 0 0;
+    border: 2px solid;
+    color: #333232;
+    border-radius: 4px;
+    transition: color 150ms linear;
+    box-sizing: content-box;*/
 
 
 
@@ -102,8 +208,7 @@
 	
 	font-size: 22px;
 
-
-}
+	}
 
 
 }

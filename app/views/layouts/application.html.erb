@@ -5,8 +5,9 @@
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -52,10 +53,10 @@
 	      
 	      <ul class="nav navbar-nav navbar-right">
 	      	<li><%= link_to "Curriculum", curriculum_path %></li>
-	        <li><a href="https://medium.com/@xoolo">Blog</a></li>
+	        <li><a href="https://medium.com/xoolo" target="_blank">Blog</a></li>
 	        <!-- <li><%= link_to "News", posts_path %></li> -->
-	        <li><%= link_to "Daily term", terms_path %></li>
-	        <li id= "test"><%= link_to "About Us", about_path %></li>
+	        <!-- <li><%= link_to "Daily term", terms_path %></li> -->
+	        <!-- <li id= "test"><%= link_to "About Us", about_path %></li> -->
 
 	      
 				 
@@ -87,11 +88,11 @@
 		<div class="footer-left">
 			<h3>Xoolo<span><%= image_tag("logo/fblogo.png", width: '50px', height: '50px') %></span></h3>
 			<p class="footer-links">
-				<a href="https://www.facebook.com/getXoolo/">Facebook</a>
+				<a href="https://www.facebook.com/getXoolo/" target="_blank" >Facebook</a>
 				·
-				<a href="https://twitter.com/_xoolo">Twitter</a>
+				<a href="https://twitter.com/_xoolo" target="_blank">Twitter</a>
 				·
-				<a href="https://medium.com/@xoolo">Blog</a>
+				<a href="https://medium.com/@xoolo" target="_blank">Blog</a>
 			</p>
 			<p class="footer-company-name">Xoolo Inc &copy; 2017</p>
 		</div>
